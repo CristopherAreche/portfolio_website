@@ -1,0 +1,35 @@
+:root {
+  --green: rgb(104, 192, 92);
+  --gray: gray;
+}
+
+.experience h3 span {
+  color: var(--green);
+  font-size: 14px;
+}
+.tabs_detail h5 a {
+  color: var(--green);
+  text-decoration: none;
+}
+.tabs_detail p,
+.tabs_detail .date {
+  color: var(--gray);
+  font-size: 15px;
+}
+.experience .nav .nav-link {
+  color: var(--gray) !important;
+  font-size: 15px !important;
+}
+
+.experience .nav .active {
+  background-color: transparent;
+  border: 2px solid var(--green);
+  color: var(--green) !important;
+}
+.experience .nav .active:hover {
+  background-color: var(--green);
+  color: black !important;
+}
+.nav button {
+  margin-left: 5px;
+}

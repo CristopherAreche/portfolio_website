@@ -1,0 +1,27 @@
+:root {
+  --green: rgb(104, 192, 92);
+  --gray: gray;
+}
+.navbar-brand {
+  font-size: 22px !important;
+  font-weight: bolder;
+  font-family: "Times New Roman", times, serif;
+  color: var(--green) !important;
+}
+
+#navbarSupportedContent ul li a {
+  font-size: 13px;
+  color: var(--gray);
+}
+#navbarSupportedContent ul li a span {
+  color: var(--green);
+}
+#navbarSupportedContent ul li button {
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 3px;
+}
+.logo {
+  width: 35px;
+  justify-content: center;
+}

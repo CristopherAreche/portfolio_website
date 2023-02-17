@@ -1,0 +1,35 @@
+:root {
+  --green: rgb(104, 192, 92);
+  --gray: gray;
+}
+
+.projects h3 span {
+  color: var(--green);
+  font-size: 14px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.card {
+  transition: 2s;
+}
+.card-body {
+  color: var(--gray);
+}
+.card-body button {
+  padding: 3px 10px;
+  font-size: 14px;
+  color: var(--gray);
+  border: 1px solid var(--green);
+  border-radius: 3px;
+}
+.card-body button:hover {
+  background-color: green !important;
+  color: white;
+}
+
+.card-img-top {
+  height: 15rem;
+  object-fit: cover;
+}

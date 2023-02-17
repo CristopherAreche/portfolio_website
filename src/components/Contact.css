@@ -1,0 +1,21 @@
+:root {
+  --green: rgb(104, 192, 92);
+  --gray: gray;
+}
+.contact .what {
+  color: var(--green);
+}
+.contact .detail {
+  color: var(--gray);
+}
+.contact button {
+  border: 1px solid var(--green);
+  padding: 5px 10px;
+  color: var(--gray);
+  border-radius: 4px;
+}
+
+.contact button:hover {
+  background-color: var(--green) !important;
+  color: black;
+}
