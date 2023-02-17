@@ -47,7 +47,7 @@ const Home = () => {
         </ul>
       </div>
       <div className="email-container">
-        <p>your_email@example.com</p>
+        <p>cristopherareche764@gmail.com</p>
       </div>
       <main>
         <p className="hi_name">Hi, my name is</p>

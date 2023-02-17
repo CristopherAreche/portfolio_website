@@ -11,7 +11,10 @@ const Projects = () => {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <div id="projects" className="bg-dark w-100 projects">
+    <div
+      id="projects"
+      className=" projects bg-dark w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 vh-100 bg-dark"
+    >
       <div className="container">
         <h3 className="px-5 pt-5 text-white">
           <span>03. </span>My Projects

@@ -9,7 +9,10 @@ const About = () => {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <div id="about" className="about bg-dark w-100">
+    <div
+      id="about"
+      className="about bg-dark w-100 d-flex  flex-column align-items-center justify-content-center w-100 vh-100 bg-dark"
+    >
       <div className="container">
         <div className="row wrapper">
           <div

@@ -18,8 +18,8 @@ const Contact = () => {
           best to get back to you!
         </p>
         <button className="bg-transparent">
-          {" "}
           <a
+            style={{ textDecoration: "none", color: "white" }}
             href="mailto:cristopherareche764@gmail.com"
             target="_blank"
             rel="noreferrer"
