@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://CristopherAreche.github.io/portfolio",
+  "homepage": "http://CristopherAreche.github.io/Portfolio-Website",
   "dependencies": {
     "@react-pdf/render": "^3.2.1",
     "@react-pdf/renderer": "^3.1.4",
