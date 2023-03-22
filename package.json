@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://CristopherAreche.github.io/portfolio",
   "dependencies": {
     "@react-pdf/render": "^3.2.1",
     "@react-pdf/renderer": "^3.1.4",
@@ -11,6 +12,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
+    "gh-pages": "^5.0.0",
     "pspdfkit": "^2023.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
