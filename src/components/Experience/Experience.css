@@ -2,11 +2,21 @@
   --green: rgb(104, 192, 92);
   --gray: gray;
 }
-
+#exp {
+  color: white;
+  font-size: 1.7em;
+}
+.details {
+  font-size: 1.2em !important;
+}
+.details i {
+  color: var(--green) !important;
+}
 .experience h3 span {
   color: var(--green);
-  font-size: 14px;
+  font-size: 1em;
 }
+
 .tabs_detail h5 a {
   color: var(--green);
   text-decoration: none;

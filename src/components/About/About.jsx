@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import PROFILEPIC from "../images/profile-pic.jpeg";
+import PROFILEPIC from "../../images/profile-pic.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -24,18 +24,20 @@ const About = () => {
             </h3>
             <p>
               Hello! my name is Cristopher and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2021 when I decided to try editing custom Blogger themes - turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS.
+              on the internet. I learned web development because I wanted to
+              have the ability to create useful and attractive things online. I
+              love the idea of being able to bring an idea to life and share it
+              with the world through the web.
             </p>
             <p>
-              I also recently launched a course that covers everything you need
-              to build a web app with the Spotify API using Node & React. Here
-              are a few technologies I've been working with recently:
+              Additionally, I have always enjoyed the challenge of learning
+              something new, and web development provides me with the
+              opportunity to do so constantly. Here are a few technologies I've
+              been working with recently:
             </p>
             <div className="row technology">
               <div className="col-6">
+                <h4 className="text-light">Frontend Tools</h4>
                 <p>
                   <span>
                     <i className="bi bi-arrow-right"> </i>
@@ -52,28 +54,53 @@ const About = () => {
                   <span>
                     <i className="bi bi-arrow-right"> </i>
                   </span>
-                  Node.JS
+                  HTML & CSS
+                </p>
+                <p>
+                  <span>
+                    <i className="bi bi-arrow-right"> </i>
+                  </span>
+                  Bootstrap CSS
+                </p>
+                <p>
+                  <span>
+                    <i className="bi bi-arrow-right"> </i>
+                  </span>
+                  Redux & Redux Toolkit
                 </p>
               </div>
               <div className="col-6">
+                <h4 className="text-light">Backend Tools</h4>
                 <p>
                   <span>
                     <i className="bi bi-arrow-right"> </i>
                   </span>
-                  TypeScript
+                  Node JS
                 </p>
                 <p>
                   <span>
                     <i className="bi bi-arrow-right"> </i>
                   </span>
-                  Bootstrap
+                  Express
                 </p>
                 <p>
                   <span>
                     {" "}
                     <i className="bi bi-arrow-right"> </i>
                   </span>
-                  Redux
+                  Sequelize
+                </p>
+                <p>
+                  <span>
+                    <i className="bi bi-arrow-right"> </i>
+                  </span>
+                  Postgre SQL
+                </p>
+                <p>
+                  <span>
+                    <i className="bi bi-arrow-right"> </i>
+                  </span>
+                  Render
                 </p>
               </div>
             </div>

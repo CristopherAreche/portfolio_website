@@ -9,7 +9,8 @@ const Contact = () => {
     >
       <div className="w-50 text-center">
         <p className="what">
-          <span>04. </span>What is next?
+          <span>04. </span>
+          <span id="whatsnext">What is next?</span>
         </p>
         <h1 className="text-white">Get in Touch</h1>
         <p className="detail">

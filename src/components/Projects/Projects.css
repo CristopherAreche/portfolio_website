@@ -5,8 +5,13 @@
 
 .projects h3 span {
   color: var(--green);
-  font-size: 14px;
+  font-size: 1em;
 }
+#myProject {
+  color: white;
+  font-size: 1.6em;
+}
+
 .card:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -16,6 +21,14 @@
 }
 .card-body {
   color: var(--gray);
+}
+.card-body a {
+  text-decoration: none;
+  color: var(--gray);
+}
+.card-body a:hover {
+  text-decoration: none;
+  color: white;
 }
 .card-body button {
   padding: 3px 10px;
@@ -32,4 +45,13 @@
 .card-img-top {
   height: 15rem;
   object-fit: cover;
+}
+
+.warning {
+  padding-top: 0.5em;
+  padding-left: 4.4em;
+}
+.warning p {
+  font-size: 1em;
+  color: rgb(183, 49, 49) !important;
 }

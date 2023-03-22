@@ -2,6 +2,22 @@
   --green: rgb(104, 192, 92);
   --gray: gray;
 }
+#home {
+  max-width: 100%;
+  padding-top: 4.5em;
+}
+#main {
+  padding-left: 12em;
+}
+#LearMoreButton {
+  text-decoration: none;
+  color: var(--green);
+}
+#LearMoreButton:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .icons-container {
   position: fixed;
   bottom: 0px;

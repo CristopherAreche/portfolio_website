@@ -2,6 +2,7 @@
   --green: rgb(104, 192, 92);
   --gray: gray;
 }
+
 p {
   color: var(--gray);
   font-size: 13px;

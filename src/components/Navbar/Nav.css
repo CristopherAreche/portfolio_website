@@ -8,6 +8,9 @@
   font-family: "Times New Roman", times, serif;
   color: var(--green) !important;
 }
+#navbar {
+  position: fixed;
+}
 
 #navbarSupportedContent ul li a {
   font-size: 13px;

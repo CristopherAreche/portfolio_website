@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="home bg-dark w-100 vh-100">
+    <div className="home bg-dark w-100 vh-100" id="home">
       <div className="icons-container">
         <ul className="icons text-white">
           <li>
@@ -49,9 +49,13 @@ const Home = () => {
       <div className="email-container">
         <p>cristopherareche764@gmail.com</p>
       </div>
-      <main>
-        <p className="hi_name">Hi, my name is</p>
-        <h1 className="text-white">Cristopher Areche.</h1>
+      <main className="container-fluid" id="main">
+        <p className="hi_name" style={{ fontSize: "1.2em" }}>
+          Hi, my name is
+        </p>
+        <h1 className="text-white" style={{ fontSize: "4em" }}>
+          Cristopher Areche.
+        </h1>
         <h2>
           <Typewriter
             options={{
@@ -62,7 +66,7 @@ const Home = () => {
             }}
           />
         </h2>
-        <p className="detail">
+        <p className="detail " style={{ fontSize: "1.5em" }}>
           I'm a software engineer specializing in building (and occasionally
           designing)
           <br />
@@ -71,7 +75,16 @@ const Home = () => {
           <br />
           human-centered products.
         </p>
-        <button className="bg-transparent">Check out More</button>
+        <button className="bg-transparent">
+          <a
+            id="LearMoreButton"
+            href="https://www.linkedin.com/in/cristopher-areche-guillen-01a603186/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Learn more
+          </a>
+        </button>
       </main>
     </div>
   );
