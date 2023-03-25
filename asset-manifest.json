@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio_website/static/css/main.3049292e.css",
-    "main.js": "/portfolio_website/static/js/main.1e232e86.js",
+    "main.css": "/portfolio_website/static/css/main.d70bbc78.css",
+    "main.js": "/portfolio_website/static/js/main.fb616ade.js",
     "static/media/profile-pic.jpeg": "/portfolio_website/static/media/profile-pic.867ec99ab1fc5ed2b761.jpeg",
     "static/media/rickmorty_wp.webp": "/portfolio_website/static/media/rickmorty_wp.1e87cc351aacfa4858f1.webp",
     "static/media/bootstrap-icons.woff?": "/portfolio_website/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/portfolio_website/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "static/media/pokemon_wp.jpeg": "/portfolio_website/static/media/pokemon_wp.3c7bb16caa7fb4f3b005.jpeg",
     "index.html": "/portfolio_website/index.html",
-    "main.3049292e.css.map": "/portfolio_website/static/css/main.3049292e.css.map",
-    "main.1e232e86.js.map": "/portfolio_website/static/js/main.1e232e86.js.map"
+    "main.d70bbc78.css.map": "/portfolio_website/static/css/main.d70bbc78.css.map",
+    "main.fb616ade.js.map": "/portfolio_website/static/js/main.fb616ade.js.map"
   },
   "entrypoints": [
-    "static/css/main.3049292e.css",
-    "static/js/main.1e232e86.js"
+    "static/css/main.d70bbc78.css",
+    "static/js/main.fb616ade.js"
   ]
 }
