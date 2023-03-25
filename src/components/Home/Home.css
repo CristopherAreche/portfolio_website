@@ -3,11 +3,14 @@
   --gray: gray;
 }
 #home {
-  max-width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
   padding-top: 4.5em;
 }
 #main {
-  padding-left: 12em;
+  width: 65%;
 }
 #LearMoreButton {
   text-decoration: none;
@@ -56,11 +59,6 @@
   background-color: var(--gray);
 }
 
-main {
-  margin-left: 120px;
-  padding-top: 150px;
-}
-
 main h1 {
   font-size: 4vw;
 }
@@ -97,9 +95,12 @@ main button:hover {
   .email-container {
     display: none;
   }
-
-  main {
-    margin-left: 30px;
-    margin-right: 30px;
+  #main {
+    height: 90vh;
+    width: 80%;
+    padding-top: 4.5em;
+  }
+  #home {
+    background-color: blue;
   }
 }

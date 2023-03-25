@@ -2,6 +2,10 @@
   --green: rgb(104, 192, 92);
   --gray: gray;
 }
+#projects {
+  min-height: 100vh;
+  padding-top: 2.5em;
+}
 
 .projects h3 span {
   color: var(--green);
@@ -49,7 +53,8 @@
 
 .warning {
   padding-top: 0.5em;
-  padding-left: 4.4em;
+  width: 80%;
+  align-self: center;
 }
 .warning p {
   font-size: 1em;

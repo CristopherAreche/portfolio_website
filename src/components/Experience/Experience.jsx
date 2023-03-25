@@ -6,9 +6,9 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="experience d-flex  flex-column align-items-center justify-content-center w-100 vh-100 bg-dark"
+      className="experience d-flex  flex-column align-items-center justify-content-center w-100 bg-dark"
     >
-      <div className="w-50 text-white">
+      <div className="container w-50 text-white" id="container">
         <h3>
           <span>02. </span>
           <span id="exp">I've worked on</span>

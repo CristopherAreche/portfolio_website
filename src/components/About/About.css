@@ -3,6 +3,8 @@
   --gray: gray;
 }
 #about {
+  min-height: 100vh;
+  padding-top: 6em;
 }
 .about_text h3 {
   color: white;

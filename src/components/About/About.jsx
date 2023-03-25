@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about bg-dark w-100 d-flex  flex-column align-items-center justify-content-center w-100 vh-100 bg-dark"
+      className="about bg-dark w-100 d-flex  flex-column align-items-center justify-content-center w-100  bg-dark"
     >
       <div className="container">
         <div className="row wrapper">

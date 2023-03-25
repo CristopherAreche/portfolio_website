@@ -14,6 +14,8 @@
   color: var(--gray);
   font-size: 1.8em;
   padding: 1.5em 0 1.5em 0;
+  width: 80%;
+  text-align: center;
 }
 .contact button {
   border: 1px solid var(--green);

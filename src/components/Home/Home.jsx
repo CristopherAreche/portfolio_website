@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="home bg-dark w-100 vh-100" id="home">
+    <div className="home bg-dark w-100 py-1" id="home">
       <div className="icons-container">
         <ul className="icons text-white">
           <li>
@@ -49,7 +49,7 @@ const Home = () => {
       <div className="email-container">
         <p>cristopherareche764@gmail.com</p>
       </div>
-      <main className="container-fluid" id="main">
+      <main className="container" id="main">
         <p className="hi_name" style={{ fontSize: "1.2em" }}>
           Hi, my name is
         </p>

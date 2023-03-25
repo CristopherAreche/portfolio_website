@@ -13,14 +13,14 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" projects bg-dark w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 vh-100 bg-dark"
+      className=" projects bg-dark w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 bg-dark"
     >
       <div className="container">
         <h3 className="px-5 pt-5 text-white">
           <span>03. </span>
           <span id="myProject">My Projects</span>
         </h3>
-        <div className="warning">
+        <div className=" container warning">
           <h5 className="text-danger"> WARNING:</h5>
           <p>
             <br></br>
