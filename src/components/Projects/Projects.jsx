@@ -99,7 +99,7 @@ const Projects = () => {
                 <button className="bg-transparent">
                   {" "}
                   <a
-                    href="https://github.com/CristopherAreche/Coperativa-Landing-Page"
+                    href="https://cristopherareche.github.io/cooperative_landing_page/"
                     target="_blank"
                     rel="noreferrer"
                   >
