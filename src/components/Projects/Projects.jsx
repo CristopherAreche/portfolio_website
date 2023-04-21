@@ -3,6 +3,7 @@ import "./Projects.css";
 import PROJECT_1 from "../../images/pokemon_wp.jpeg";
 import PROJECT_2 from "../../images/rickmorty_wp.webp";
 import PROJECT_3 from "../../images/cooperativa.jpeg";
+import PROJECT_4 from "../../images/crm.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -30,9 +31,9 @@ const Projects = () => {
             visiting my portfolio website!
           </p>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 p-5 text-center">
-          <div class="col" data-aos="fade-right">
-            <div class="card">
+        <div class="row my-8 text-center">
+          <div class="col" data-aos="zoom-in">
+            <div class="card w-75 h-100">
               <img
                 src={PROJECT_1}
                 class="card-img-top embed-responsive-item"
@@ -57,7 +58,32 @@ const Projects = () => {
             </div>
           </div>
           <div class="col" data-aos="zoom-in">
-            <div class="card">
+            <div class="card w-75 h-100">
+              <img
+                src={PROJECT_4}
+                class="card-img-top embed-responsive-item"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">CRM Website</h5>
+                <p class="card-text">
+                  FullStack website build to manage inventory, sellers and
+                  clients.
+                </p>
+                <button className="bg-transparent">
+                  <a
+                    href="https://crm-henry-34b.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Go to Website
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="zoom-in">
+            <div class="card w-75">
               <img
                 src={PROJECT_2}
                 class="card-img-top embed-responsive-item"
@@ -82,8 +108,8 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col" data-aos="fade-left">
-            <div class="card">
+          <div class="col" data-aos="zoom-in">
+            <div class="card w-75">
               <img
                 src={PROJECT_3}
                 class="card-img-top embed-responsive-item"
@@ -97,7 +123,6 @@ const Projects = () => {
                   credentials into a fillable form and download it as a PDF.
                 </p>
                 <button className="bg-transparent">
-                  {" "}
                   <a
                     href="https://cristopherareche.github.io/cooperative_landing_page/"
                     target="_blank"
