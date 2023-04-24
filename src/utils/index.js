@@ -19,51 +19,54 @@ import randm from "../images/rickmorty_wp.webp";
 import crm from "../images/crm.jpeg";
 import cooperativa from "../images/cooperativa.jpeg";
 
-export const back_icons = [
-  { image: node, title: "Node.js" },
-  { image: express, title: "Express" },
-  { image: sequelize, title: "Sequelize" },
-  { image: postgre, title: "PostgreSQL" },
-  { image: postman, title: "Postman" },
+export const devtools = [
+  [
+    "Front-end",
+    {
+      image: html,
+      title: "HTML",
+    },
+    {
+      image: css,
+      title: "CSS",
+    },
+    {
+      image: js,
+      title: "JavaScript",
+    },
+    {
+      image: reactjs,
+      title: "React Js",
+    },
+    {
+      image: redux,
+      title: "Redux-Toolkit",
+    },
+    {
+      image: bootstrap,
+      title: "Bootstrap",
+    },
+    {
+      image: tailwind,
+      title: "Tailwind",
+    },
+  ],
+  [
+    "Back-end",
+    { image: node, title: "Node.js" },
+    { image: express, title: "Express" },
+    { image: sequelize, title: "Sequelize" },
+    { image: postgre, title: "PostgreSQL" },
+    { image: postman, title: "Postman" },
+  ],
+  [
+    "Collaboration Tools",
+    { image: vscode, title: "VS Code" },
+    { image: github, title: "Github" },
+    { image: git, title: "Git" },
+    { image: trello, title: "Trello" },
+  ],
 ];
-export const collab_icons = [
-  { image: vscode, title: "VS Code" },
-  { image: github, title: "Github" },
-  { image: git, title: "Git" },
-  { image: trello, title: "Trello" },
-];
-
-export const front_icons = [
-  {
-    image: html,
-    title: "HTML",
-  },
-  {
-    image: css,
-    title: "CSS",
-  },
-  {
-    image: js,
-    title: "JavaScript",
-  },
-  {
-    image: reactjs,
-    title: "React Js",
-  },
-  {
-    image: redux,
-    title: "Redux-Toolkit",
-  },
-  {
-    image: bootstrap,
-    title: "Bootstrap",
-  },
-  {
-    image: tailwind,
-    title: "Tailwind",
-  },
-];
-
 export const projects = [
   {
     image: pokemon,

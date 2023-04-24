@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "./Projects.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { projects } from "../../utils/index";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   useEffect(() => {
@@ -11,58 +11,87 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" projects bg-dark w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 bg-dark"
+      className=" projects bg-dark min-vh-100 w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 bg-dark"
     >
       <header className="title">
         <h1 className="text-white">Projects</h1>
       </header>
-      <div className="project_container mt-lg-4">
+      <div className="container row">
         {projects.map((project) => (
-          <div className="card">
-            <div className="content row h-100 w-100 m-0">
-              <div className="col-md-5 p-0">
-                <img
-                  id="project_img"
-                  src={project.image}
-                  className="img-fluid h-100 w-full"
-                  alt={project.name}
-                />
-              </div>
-              <div className="sub_content col-md-7">
-                <div className="row">
-                  <div className="col-md-12">
-                    <h2>{project.name}</h2>
-                    <p>{project.description}</p>
-                    <button className="source_btn">
-                      <a
-                        target="_blank"
-                        rel="noreferrer"
-                        href={project.source_code}
+          <div className="col-lg-6 text-white p-0 m-0">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.8 }}
+              className="card m-3 bg-black bg-opacity-50 rounded-4"
+              style={{}}
+            >
+              <div className="row g-0">
+                <div className="col-md-5" style={{ height: "17em" }}>
+                  <img
+                    className="rounded-4 p-2 w-100 h-100"
+                    src={project.image}
+                    alt={project.name}
+                  />
+                </div>
+                <div
+                  className="col-md-7"
+                  style={{
+                    height: "17em",
+                  }}
+                >
+                  <div class="card-body h-100 d-flex flex-column justify-content-evenly">
+                    <h4
+                      style={{ color: "rgb(104, 192, 92)" }}
+                      class="card-title"
+                    >
+                      {project.name}
+                    </h4>
+                    <p class="card-text text-white fs-8">
+                      {project.description}
+                    </p>
+                    <div className="d-flex gap-4">
+                      <button
+                        style={{ border: "1px solid rgb(104, 192, 92)" }}
+                        className="btn btn-outline-success bg-transparent"
                       >
-                        Source Code
-                      </a>
-                    </button>
-                    <button className="visit_btn">
-                      <a target="_blank" rel="noreferrer" href={project.deploy}>
-                        Visit
-                      </a>
-                    </button>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-11">
-                    {project.stack.map((icon) => (
-                      <img
-                        id="stack"
-                        style={{ height: "1.3em" }}
-                        src={icon}
-                        alt={project.name}
-                      />
-                    ))}
+                        <a
+                          style={{ color: " rgb(104, 192, 92)" }}
+                          className="text-decoration-none"
+                          href={project.source_code}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Source Code
+                        </a>
+                      </button>
+                      <button
+                        style={{ border: "1px solid rgb(104, 192, 92)" }}
+                        className="btn btn-outline-success bg-transparent"
+                      >
+                        <a
+                          style={{ color: " rgb(104, 192, 92)" }}
+                          className="text-decoration-none"
+                          href={project.deploy}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Visit
+                        </a>
+                      </button>
+                    </div>
+                    <div className="d-flex gap-2 flex-wrap">
+                      {project.stack.map((icons) => (
+                        <img
+                          style={{ width: "1.5em" }}
+                          src={icons}
+                          alt={project}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

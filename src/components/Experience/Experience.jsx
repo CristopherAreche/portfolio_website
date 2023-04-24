@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/js/dist/tab";
 import "./Experience.css";
+import "aos/dist/aos.css";
 
 const Experience = () => {
   return (
@@ -11,7 +12,7 @@ const Experience = () => {
       <div className="exp_container">
         <div className="row">
           {/* Education */}
-          <section className="col">
+          <section data-aos="zoom-in" className="col">
             <header className="title">
               <h2 className="text-white">Education</h2>
             </header>
@@ -38,7 +39,7 @@ const Experience = () => {
             </div>
           </section>
           {/* Experience */}
-          <section className="col">
+          <section data-aos="zoom-in" className="col">
             <header className="title">
               <h2 className="text-white">Experience</h2>
             </header>
