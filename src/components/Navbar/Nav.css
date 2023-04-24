@@ -10,11 +10,15 @@
 }
 #navbar {
   position: fixed;
+  z-index: 2;
 }
-
 #navbarSupportedContent ul li a {
   font-size: 13px;
   color: var(--gray);
+}
+#navbarSupportedContent ul li a:hover {
+  font-size: 13px;
+  color: white;
 }
 #navbarSupportedContent ul li a span {
   color: var(--green);

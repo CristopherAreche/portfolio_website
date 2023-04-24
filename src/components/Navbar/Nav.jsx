@@ -11,7 +11,7 @@ const Nav = () => {
       className="navbar navbar-expand-lg bg-dark fixed-top sticky-top vw-100 px-5"
       id="navbar"
     >
-      <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href="#home">
         <img src={LOGO} className="logo" alt="logo" />
       </a>
       <button
@@ -30,7 +30,6 @@ const Nav = () => {
         <ul className="navbar-nav ms-auto">
           <li className="nav-item active">
             <a className="nav-link" href="#about" style={{ fontSize: "1.2em" }}>
-              <span>01. </span>
               About
             </a>
           </li>
@@ -40,8 +39,16 @@ const Nav = () => {
               href="#experience"
               style={{ fontSize: "1.2em" }}
             >
-              <span>02. </span>
               Experience
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className="nav-link"
+              href="#devtools"
+              style={{ fontSize: "1.2em" }}
+            >
+              DevTools
             </a>
           </li>
           <li className="nav-item">
@@ -50,7 +57,6 @@ const Nav = () => {
               href="#projects"
               style={{ fontSize: "1.2em" }}
             >
-              <span>03. </span>
               Projects
             </a>
           </li>
@@ -60,7 +66,6 @@ const Nav = () => {
               href="#contact"
               style={{ fontSize: "1.2em" }}
             >
-              <span>04. </span>
               Contact
             </a>
           </li>

@@ -4,54 +4,76 @@
 }
 #experience {
   min-height: 100vh;
-  padding-top: 1em;
+  padding-top: 5em;
 }
-#exp {
-  color: white;
-  font-size: 1.7em;
+.exp_container {
+  width: 100%;
+  padding: 35px 10%;
 }
-.details {
-  font-size: 1.2em !important;
-}
-.details i {
-  color: var(--green) !important;
-}
-.experience h3 span {
-  color: var(--green);
-  font-size: 1em;
+.exp_container {
+  padding-right: calc(10% - 30px);
 }
 
-.tabs_detail h5 a {
-  color: var(--green);
-  text-decoration: none;
-}
-.tabs_detail p,
-.tabs_detail .date {
-  color: var(--gray);
-  font-size: 15px;
-}
-.experience .nav .nav-link {
-  color: var(--gray) !important;
-  font-size: 15px !important;
+main.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
 }
 
-.experience .nav .active {
-  background-color: transparent;
-  border: 2px solid var(--green);
-  color: var(--green) !important;
+.col header.title {
+  color: var(--green);
+  padding: 0px 0px 20px 30px;
 }
-.experience .nav .active:hover {
+.col .contents {
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+}
+.col .contents .box {
+  border-radius: 1em;
+  position: relative;
+  padding: 20px;
+  background-color: rgba(7, 7, 7, 0.508);
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+.col .contents .box:hover {
+  box-shadow: 0px 3px 12px 0px black;
+  border: 1px solid transparent;
+}
+
+.col .contents .box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 24px);
+  top: 0%;
   background-color: var(--green);
-  color: black !important;
+  border: 2px solid white;
 }
-.nav button {
-  margin-left: 5px;
+.box h4 {
+  position: relative;
+  color: var(--green);
 }
-@media only screen and (max-width: 768px) {
-  #container {
-    min-width: 90vw;
+
+.box h3 {
+  font-size: 25px;
+  padding: 10px 0px 6px;
+  color: #444;
+}
+.box p {
+  line-height: 1.2;
+  color: #666;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  main.row {
+    grid-template-columns: 1fr;
   }
-  #v-pills-tab {
-    display: none;
+  .row .col:nth-child(2) {
+    margin-top: 30px;
   }
 }

@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import "./Projects.css";
-import PROJECT_1 from "../../images/pokemon_wp.jpeg";
-import PROJECT_2 from "../../images/rickmorty_wp.webp";
-import PROJECT_3 from "../../images/cooperativa.jpeg";
-import PROJECT_4 from "../../images/crm.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { projects } from "../../utils/index";
 
 const Projects = () => {
   useEffect(() => {
@@ -16,125 +13,58 @@ const Projects = () => {
       id="projects"
       className=" projects bg-dark w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 bg-dark"
     >
-      <div className="container">
-        <h3 className="px-5 pt-5 text-white">
-          <span>03. </span>
-          <span id="myProject">My Projects</span>
-        </h3>
-        <div className=" container warning">
-          <h5 className="text-danger"> WARNING:</h5>
-          <p>
-            <br></br>
-            Please note that you may experience some bugs in some of projects as
-            I continue to work on them.
-            <br></br> I appreciate your patience and understanding. Thanks for
-            visiting my portfolio website!
-          </p>
-        </div>
-        <div class="row my-8 text-center">
-          <div class="col" data-aos="zoom-in">
-            <div class="card w-75 h-100">
-              <img
-                src={PROJECT_1}
-                class="card-img-top embed-responsive-item"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pokemon Website</h5>
-                <p class="card-text">
-                  FullStack website build to find all your favorite pokemons and
-                  create your own.
-                </p>
-                <button className="bg-transparent">
-                  <a
-                    href="https://cristopherareche.github.io/pokemon-website/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Go to Website
-                  </a>
-                </button>
+      <header className="title">
+        <h1 className="text-white">Projects</h1>
+      </header>
+      <div className="project_container mt-lg-4">
+        {projects.map((project) => (
+          <div className="card">
+            <div className="content row h-100 w-100 m-0">
+              <div className="col-md-5 p-0">
+                <img
+                  id="project_img"
+                  src={project.image}
+                  className="img-fluid h-100 w-full"
+                  alt={project.name}
+                />
+              </div>
+              <div className="sub_content col-md-7">
+                <div className="row">
+                  <div className="col-md-12">
+                    <h2>{project.name}</h2>
+                    <p>{project.description}</p>
+                    <button className="source_btn">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={project.source_code}
+                      >
+                        Source Code
+                      </a>
+                    </button>
+                    <button className="visit_btn">
+                      <a target="_blank" rel="noreferrer" href={project.deploy}>
+                        Visit
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-11">
+                    {project.stack.map((icon) => (
+                      <img
+                        id="stack"
+                        style={{ height: "1.3em" }}
+                        src={icon}
+                        alt={project.name}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col" data-aos="zoom-in">
-            <div class="card w-75 h-100">
-              <img
-                src={PROJECT_4}
-                class="card-img-top embed-responsive-item"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">CRM Website</h5>
-                <p class="card-text">
-                  FullStack website build to manage inventory, sellers and
-                  clients.
-                </p>
-                <button className="bg-transparent">
-                  <a
-                    href="https://crm-henry-34b.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Go to Website
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col" data-aos="zoom-in">
-            <div class="card w-75">
-              <img
-                src={PROJECT_2}
-                class="card-img-top embed-responsive-item"
-                alt="..."
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Rick and Morty Website</h5>
-                <p class="card-text">
-                  Frontend website build to find all character from Rick and
-                  Morty tv show.
-                </p>
-                <button className="bg-transparent">
-                  <a
-                    href="https://cristopherareche.github.io/rick_and_morty_website/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Go to Website
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col" data-aos="zoom-in">
-            <div class="card w-75">
-              <img
-                src={PROJECT_3}
-                class="card-img-top embed-responsive-item"
-                alt="..."
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Cooperativa Website</h5>
-                <p class="card-text">
-                  Frontend website build to help customers to register their
-                  credentials into a fillable form and download it as a PDF.
-                </p>
-                <button className="bg-transparent">
-                  <a
-                    href="https://cristopherareche.github.io/cooperative_landing_page/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Go to Website
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

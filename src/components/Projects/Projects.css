@@ -6,57 +6,75 @@
   min-height: 100vh;
   padding-top: 2.5em;
 }
-
-.projects h3 span {
-  color: var(--green);
-  font-size: 1em;
-}
-#myProject {
-  color: white;
-  font-size: 1.6em;
-}
-
-.card:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+.project_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2em;
+  row-gap: 1em;
 }
 .card {
-  transition: 2s;
+  height: 16em;
+  width: 36em;
+  border-radius: 2em;
+  background-color: rgba(7, 7, 7, 0.508) !important;
+  border: none;
 }
-.card-body {
+.card:hover {
+  box-shadow: 0px 3px 12px 0px black;
+  border: 1px solid transparent;
+}
+.card .content {
+  border-radius: 2em;
+}
+#project_img {
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.sub_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sub_content .row h2 {
+  color: var(--green);
+}
+.sub_content .row p {
   color: var(--gray);
+  padding-right: 0.5em;
+  font-size: 0.9em;
 }
-.card-body a {
-  text-decoration: none;
-  color: var(--gray);
-}
-.card-body a:hover {
-  text-decoration: none;
-  color: white;
-}
-.card-body button {
-  padding: 3px 10px;
-  font-size: 14px;
-  color: var(--gray);
+
+.source_btn {
+  border: none;
+  padding: 2px 5px;
+  border-radius: 0.5em;
+  margin-right: 1em;
+  background-color: transparent;
   border: 1px solid var(--green);
-  border-radius: 3px;
 }
-.card-body button:hover {
-  background-color: green !important;
-  color: white;
+.source_btn a {
+  color: var(--green);
+  text-decoration: none;
+}
+.visit_btn a {
+  color: var(--green);
+  text-decoration: none;
+}
+.visit_btn {
+  border: none;
+  padding: 2px 5px;
+  border-radius: 0.5em;
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
 }
 
-.card-img-top {
-  height: 15rem;
-  object-fit: cover;
-}
-
-.warning {
-  padding-top: 0.5em;
-  width: 80%;
-  align-self: center;
-}
-.warning p {
-  font-size: 1em;
-  color: rgb(183, 49, 49) !important;
+#stack {
+  margin: 2px;
 }
