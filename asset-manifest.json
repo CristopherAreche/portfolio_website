@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_website/static/css/main.a5e4502a.css",
-    "main.js": "/portfolio_website/static/js/main.b9f868cd.js",
+    "main.js": "/portfolio_website/static/js/main.885728ab.js",
     "static/media/profile-pic.jpeg": "/portfolio_website/static/media/profile-pic.867ec99ab1fc5ed2b761.jpeg",
     "static/media/rickmorty_wp.webp": "/portfolio_website/static/media/rickmorty_wp.1e87cc351aacfa4858f1.webp",
     "static/media/bootstrap-icons.woff?": "/portfolio_website/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
@@ -26,10 +26,10 @@
     "static/media/trello.svg": "/portfolio_website/static/media/trello.928ecd0ef21db30aaede3f63eea28cbe.svg",
     "index.html": "/portfolio_website/index.html",
     "main.a5e4502a.css.map": "/portfolio_website/static/css/main.a5e4502a.css.map",
-    "main.b9f868cd.js.map": "/portfolio_website/static/js/main.b9f868cd.js.map"
+    "main.885728ab.js.map": "/portfolio_website/static/js/main.885728ab.js.map"
   },
   "entrypoints": [
     "static/css/main.a5e4502a.css",
-    "static/js/main.b9f868cd.js"
+    "static/js/main.885728ab.js"
   ]
 }
