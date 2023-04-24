@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { projects } from "../../utils/index";
-import { motion } from "framer-motion";
 
 const Projects = () => {
   useEffect(() => {
@@ -19,12 +18,7 @@ const Projects = () => {
       <div className="container row">
         {projects.map((project) => (
           <div className="col-lg-6 text-white p-0 m-0">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.8 }}
-              className="card m-3 bg-black bg-opacity-50 rounded-4"
-              style={{}}
-            >
+            <div className="card m-3 bg-black bg-opacity-50 rounded-4">
               <div className="row g-0">
                 <div className="col-md-5" style={{ height: "17em" }}>
                   <img
@@ -91,7 +85,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         ))}
       </div>
