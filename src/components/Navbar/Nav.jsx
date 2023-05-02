@@ -2,8 +2,7 @@ import React from "react";
 import "./Nav.css";
 import "bootstrap/js/dist/collapse";
 import LOGO from "../../images/logo.png";
-import { PDFViewer } from "@react-pdf/renderer";
-import PDF from "../PDFbutton/PDF";
+import resume from "../../assets/resume.pdf";
 
 const Nav = () => {
   return (
@@ -70,20 +69,8 @@ const Nav = () => {
             </a>
           </li>
           <li className="nav-item d-flex align-items-center ms-2">
-            <a
-              href="https://docs.google.com/document/d/1aoMy-M_0gYNMaORXv2QF1Lq04AE7f6FYCLSqWxXsW6s/edit"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button
-                style={{ fontSize: "1.2em" }}
-                className="bg-transparent"
-                onClick={() => {
-                  <PDFViewer>
-                    <PDF />
-                  </PDFViewer>;
-                }}
-              >
+            <a href={resume} target="_blank" rel="noreferrer">
+              <button style={{ fontSize: "1.5em" }} className="bg-transparent">
                 Resume
               </button>
             </a>

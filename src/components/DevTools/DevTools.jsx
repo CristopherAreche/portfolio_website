@@ -11,13 +11,14 @@ const TechStack = () => {
       <h1 className="text-white text-center my-5">Technology Stack</h1>
 
       <div className="row row-cols-1 row-cols-md-3">
-        {devtools.map((tools) => (
-          <div className="col text-white">
+        {devtools.map((tools, index) => (
+          <div key={index} className="col text-white">
             <h3 className="text-light my-3 text-center">{tools[0]} </h3>
             {tools.map((icon, index) => {
               if (index > 0) {
                 return (
                   <div
+                    key={index}
                     className="container mb-3 rounded-3 d-flex align-items-center justify-content-center gap-4 bg-black bg-opacity-50"
                     style={{ height: "4em" }}
                   >
@@ -26,7 +27,7 @@ const TechStack = () => {
                       className="img-fluid h-75"
                       alt={icon.title}
                     />
-                    <h5 class="card-title text-white">{icon.title}</h5>
+                    <h5 className="card-title text-white">{icon.title}</h5>
                   </div>
                 );
               }

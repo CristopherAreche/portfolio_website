@@ -16,8 +16,8 @@ const Projects = () => {
         <h1 className="text-white">Projects</h1>
       </header>
       <div className="container row">
-        {projects.map((project) => (
-          <div className="col-lg-6 text-white p-0 m-0">
+        {projects.map((project, index) => (
+          <div key={index} className="col-lg-6 text-white p-0 m-0">
             <div className="card m-3 bg-black bg-opacity-50 rounded-4">
               <div className="row g-0">
                 <div className="col-md-5" style={{ height: "17em" }}>
@@ -33,14 +33,14 @@ const Projects = () => {
                     height: "17em",
                   }}
                 >
-                  <div class="card-body h-100 d-flex flex-column justify-content-evenly">
+                  <div className="card-body h-100 d-flex flex-column justify-content-evenly">
                     <h4
                       style={{ color: "rgb(104, 192, 92)" }}
-                      class="card-title"
+                      className="card-title"
                     >
                       {project.name}
                     </h4>
-                    <p class="card-text text-white fs-8">
+                    <p className="card-text text-white fs-8">
                       {project.description}
                     </p>
                     <div className="d-flex gap-4">
@@ -74,8 +74,9 @@ const Projects = () => {
                       </button>
                     </div>
                     <div className="d-flex gap-2 flex-wrap">
-                      {project.stack.map((icons) => (
+                      {project.stack.map((icons, index) => (
                         <img
+                          key={index}
                           style={{ width: "1.5em" }}
                           src={icons}
                           alt={project}
