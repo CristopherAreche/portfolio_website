@@ -33,8 +33,8 @@ const Experience = () => {
               </div>
               <div className="box">
                 <h4>Nov 2022 - April 2023</h4>
-                <h3 className="text-white">Henry Coding Bootcamp</h3>
-                <p>Buenos Aires, Argentina.</p>
+                <h3 className="text-white">Full Stack Coding Bootcamp</h3>
+                <p>HENRY Coding Bootcamp, Buenos Aires, Argentina.</p>
               </div>
             </div>
           </section>
@@ -51,13 +51,13 @@ const Experience = () => {
               </div>
               <div className="box">
                 <h4>February - 2023</h4>
-                <h3 className="text-white">Henry Coding Bootcamp</h3>
+                <h3 className="text-white">Pokemon Web app</h3>
                 <p>Individual Proyect at Henry Coding Bootcamp.</p>
               </div>
               <div className="box">
                 <h4> April - 2023</h4>
                 <h4 className="text-white">
-                  CRM (Customer Relationship Management) Website
+                  CRM (Customer Relationship Management) Web app
                 </h4>
                 <p>Final Proyect at Henry Coding Bootcamp.</p>
               </div>

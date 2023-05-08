@@ -27,7 +27,7 @@ const Home = () => {
         </h2>
         <p className="" style={{ fontSize: "1.5em" }}>
           I'm a Front-end software engineer. I currently completed a +800-hour
-          full stack development bootcamp at Henry.Currently, I'm focused on
+          full stack development bootcamp at Henry. Currently, I'm focused on
           building accessible and useful React applications. I also have a great
           interest for the Fintech industry.
         </p>
