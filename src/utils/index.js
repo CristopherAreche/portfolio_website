@@ -75,7 +75,7 @@ export const projects = [
       "An online platform dedicated to providing information and resources about the world of Pokémon, including details about the different types and the option to create your own Pokémon.",
     stack: [reactjs, js, css, html, postgre, sequelize, node, express],
     source_code: "https://github.com/CristopherAreche/pokemon-website",
-    deploy: "https://cristopherareche.github.io/pokemon-website/",
+    deploy: "https://pokemon-lemon-two.vercel.app/",
   },
   {
     image: randm,
