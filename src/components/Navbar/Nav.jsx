@@ -2,7 +2,7 @@ import React from "react";
 import "./Nav.css";
 import "bootstrap/js/dist/collapse";
 import LOGO from "../../images/logo.png";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/resume_eng.pdf";
 
 const Nav = () => {
   return (
