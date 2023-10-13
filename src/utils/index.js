@@ -15,9 +15,11 @@ import github from "../utils/logos/github-icon.svg";
 import trello from "../utils/logos/trello.svg";
 import vscode from "../utils/logos/visual-studio-code.svg";
 import pokemon from "../images/pokemon_wp.jpeg";
-import randm from "../images/rickmorty_wp.webp";
+import randm from "../images/rickmorty_wp.jpeg";
 import crm from "../images/crm.jpeg";
 import cooperativa from "../images/cooperativa.jpeg";
+import businessBox from "../images/businessBox.jpeg";
+import dental from "../images/dental.jpeg";
 
 export const devtools = [
   [
@@ -113,5 +115,23 @@ export const projects = [
     stack: [reactjs, js, css, html],
     source_code: "https://github.com/CristopherAreche/cooperative_landing_page",
     deploy: "https://cristopherareche.github.io/cooperative_landing_page/",
+  },
+  {
+    image: businessBox,
+    name: "Business Box",
+    description:
+      "An adaptive personal project build for a small business focused on the food industry.",
+    stack: [reactjs, js, css, html, bootstrap, node],
+    source_code: false,
+    deploy: "https://business-box-git-main-jdaniel96.vercel.app/",
+  },
+  {
+    image: dental,
+    name: "Dental Center",
+    description:
+      "Project developed during my internship at Makisan Tech focused on the Health care sector.",
+    stack: [reactjs, js, css, html, bootstrap, node],
+    source_code: false,
+    deploy: "https://odontologia-front.vercel.app/",
   },
 ];

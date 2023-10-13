@@ -6,7 +6,7 @@ const Contact = () => {
       className="gap-4 p-5 w-100 min-vh-100 bg-dark d-flex flex-column justify-content-center align-items-center"
     >
       <h1 className="text-white">Contact</h1>
-      <p className="detail text-center fs-3">
+      <p className="detail text-center fs- w-75">
         I'm currently looking for any new opportunities, my inbox is always
         open. Whether you have a question or just want to say hi, I'll try my
         best to get back to you!

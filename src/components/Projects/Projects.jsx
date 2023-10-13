@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { projects } from "../../utils/index";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "react-bootstrap";
+import CarouselComponent from "./CarouselComponent";
 
 const Projects = () => {
   useEffect(() => {
@@ -15,81 +18,7 @@ const Projects = () => {
       <header className="title">
         <h1 className="text-white">Projects</h1>
       </header>
-      <div className="container row">
-        {projects.map((project, index) => (
-          <div key={index} className="col-lg-6 text-white p-0 m-0">
-            <div className="card m-3 bg-black bg-opacity-50 rounded-4">
-              <div className="row g-0">
-                <div className="col-md-5" style={{ height: "17em" }}>
-                  <img
-                    className="rounded-4 p-2 w-100 h-100"
-                    src={project.image}
-                    alt={project.name}
-                  />
-                </div>
-                <div
-                  className="col-md-7"
-                  style={{
-                    height: "17em",
-                  }}
-                >
-                  <div className="card-body h-100 d-flex flex-column justify-content-evenly">
-                    <h4
-                      style={{ color: "rgb(104, 192, 92)" }}
-                      className="card-title"
-                    >
-                      {project.name}
-                    </h4>
-                    <p className="card-text text-white fs-8">
-                      {project.description}
-                    </p>
-                    <div className="d-flex gap-4">
-                      <button
-                        style={{ border: "1px solid rgb(104, 192, 92)" }}
-                        className="btn btn-outline-success bg-transparent"
-                      >
-                        <a
-                          style={{ color: " rgb(104, 192, 92)" }}
-                          className="text-decoration-none"
-                          href={project.source_code}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Source Code
-                        </a>
-                      </button>
-                      <button
-                        style={{ border: "1px solid rgb(104, 192, 92)" }}
-                        className="btn btn-outline-success bg-transparent"
-                      >
-                        <a
-                          style={{ color: " rgb(104, 192, 92)" }}
-                          className="text-decoration-none"
-                          href={project.deploy}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Visit
-                        </a>
-                      </button>
-                    </div>
-                    <div className="d-flex gap-2 flex-wrap">
-                      {project.stack.map((icons, index) => (
-                        <img
-                          key={index}
-                          style={{ width: "1.5em" }}
-                          src={icons}
-                          alt={project}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <CarouselComponent projects={projects} />
     </div>
   );
 };
