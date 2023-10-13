@@ -24,7 +24,10 @@ const CarouselComponent = ({ projects }) => {
 
   const slides = projects.map((project, index) => (
     <CarouselItem key={index}>
-      <div className="container row d-flex justify-content-center">
+      <div
+        style={{ width: "100%" }}
+        className="container row d-flex justify-content-center"
+      >
         <div
           key={index}
           className="text-white p-0 m-0"
@@ -121,7 +124,7 @@ const CarouselComponent = ({ projects }) => {
       activeIndex={activeIndex}
       next={next}
       previous={previous}
-      style={{ width: "100vw" }}
+      style={{ width: "90vw" }}
     >
       <CarouselIndicators
         items={projects}

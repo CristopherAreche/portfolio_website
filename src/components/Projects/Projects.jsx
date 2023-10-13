@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" projects bg-dark min-vh-100 w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 bg-dark"
+      className=" projects bg-dark min-vh-100 w-100 projects d-flex  flex-column align-items-center justify-content-center w-100 bg-dark gap-5"
     >
       <header className="title">
         <h1 className="text-white">Projects</h1>
